@@ -3,6 +3,7 @@ function genGrid(width, height) {
     var drawer = document.getElementById('drawer');
     //Create the table element
     var table = document.createElement('table');
+    table.className = "table"
     for(var x = 0; x < width; x++) {
         //Create table row elements
         var tableRow = document.createElement('tr');
@@ -27,4 +28,12 @@ function genGrid(width, height) {
     }
     //Append table to drawer div
     drawer.appendChild(table);
+}
+
+function parseGrid() {
+
+}
+
+function clearGrid() {
+
 }
