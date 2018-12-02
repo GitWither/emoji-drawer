@@ -1,0 +1,23 @@
+{
+  "name": "emoji-drawer",
+  "version": "1.0.0",
+  "description": "An application to easily convert drawings to emoji",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^3.0.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GitWither/emoji-drawer.git"
+  },
+  "author": "Wither and Karl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GitWither/emoji-drawer/issues"
+  },
+  "homepage": "https://github.com/GitWither/emoji-drawer#readme"
+}
