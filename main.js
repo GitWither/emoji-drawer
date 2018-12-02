@@ -1,9 +1,17 @@
-const { app, BrowserWindow } = require('electron')
+const {app, BrowserWindow} = require('electron')
 
-function createWindow () {
-  win = new BrowserWindow({ width: 800, height: 600 })
+let win
 
-  win.loadFile('index.html')
+function createWindow() {
+    win = new BrowserWindow()
+
+    win.setMenu(null)
+    win.maximize()
+    win.loadFile('index.html')
+
+    win.on('closed', () => {
+        win = null
+    })
 }
 
 app.on('ready', createWindow)
