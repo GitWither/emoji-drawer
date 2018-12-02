@@ -13,13 +13,14 @@ function genGrid(width, height) {
             tableColumn.id = `r${x}c${y}`;
 
             //Create dropdown elements
-            var select = document.createElement('select');
+            var select = document.createElement('img');
+            select.src = "emoji/1f602.png"
             select.id = `r${x}c${y}`;
 
             //Append dropdown elements to columns
             tableColumn.appendChild(select);
             //Append columns to rows
-            tableRow.appendChild(tableH);
+            tableRow.appendChild(tableColumn);
         }
         //Append rows to table
         table.appendChild(tableRow);
