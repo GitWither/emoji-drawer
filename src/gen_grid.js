@@ -14,11 +14,20 @@ function genGrid(width, height) {
             tableColumn.id = `r${x}c${y}`;
 
             //Create dropdown elements
-            var select = document.createElement('img');
-            select.src = "emoji/1f602.png"
-            select.id = `r${x}c${y}`;
+            var select = document.createElement('select');
+            var emoji = document.createElement('img')
+            var option = document.createElement('option');
+            option.value = "OH HELLO THERE"
+            option.text = "😂"
+            select.appendChild(option)
+            select.onchange = function(image) {
+                if(image.value = "OH HELLO THERE") {
+                    emoji.src = "1f1e6"
+                }
+            }
 
             //Append dropdown elements to columns
+            tableColumn.appendChild(emoji)
             tableColumn.appendChild(select);
             //Append columns to rows
             tableRow.appendChild(tableColumn);
@@ -35,5 +44,9 @@ function parseGrid() {
 }
 
 function clearGrid() {
+
+}
+
+function populateList() {
 
 }
